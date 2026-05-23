@@ -8,7 +8,12 @@ st.sidebar.image("python_logo.png")
 
 modulo = st.selectbox ("sleccione un módulo", ["Módulo 1", "Módulo 2", "Módulo 3"])
 
-
+if modulo == "Modulo 1":
+    upload_files= st.file_uploader(
+        "Upload data", accep_multiple_fiales, type="csv"
+    )
+    for aupload_file in uploaded_files:
+        df= pd.read_csv(upload_file)
     
 
 uploaded_files = st.file_uploader(
