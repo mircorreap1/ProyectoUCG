@@ -7,7 +7,7 @@ st.title("Proyecto final UCG")
 
 st.sidebar.title("Parámetros")
 
-#st.sidebar.image("python_logo.png")
+st.sidebar.image("python_logo.png")
 
 
 modulo = st.sidebar.selectbox("Seleccione un módulo", ["Módulo 1", "Módulo 2", "Módulo 3"] )
